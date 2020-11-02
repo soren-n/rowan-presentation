@@ -1,0 +1,22 @@
+{
+  "name": "rowan-presentation",
+  "version": "1.0.0",
+  "description": "A presentation of the idea of a Language Workbench",
+  "scripts": {
+    "build": "rimraf dist && npm run -s deck",
+    "deck": "marp --no-stdin presentation.md -o dist/index.html && cpy \"assets/**/*\" dist/assets"
+  },
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soren-n/rowan-presentation.git"
+  },
+  "author": "Soren Norbaek (sorennorbaek@gmail.com)",
+  "license": "MIT",
+  "homepage": "https://github.com/soren-n/rowan-presentation#readme",
+  "dependencies": {
+    "@marp-team/marp-cli": "^0.22.0",
+    "cpy-cli": "^3.1.1",
+    "rimraf": "^3.0.2"
+  }
+}
